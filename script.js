@@ -488,6 +488,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxModal = document.getElementById('photo-lightbox');
     const lightboxImg = document.getElementById('lightbox-main-img');
     const lightboxVideo = document.getElementById('lightbox-main-video');
+<<<<<<< HEAD
+    const lightboxIframe = document.getElementById('lightbox-main-iframe');
+=======
+>>>>>>> 4e5992f72a9790aa689e3e72588518b3bb7e533d
     const lightboxCaption = document.getElementById('lightbox-caption-text');
     const closeBtn = document.getElementById('lightbox-close-btn');
     const prevBtn = document.getElementById('lightbox-prev-btn');
@@ -515,20 +519,52 @@ document.addEventListener('DOMContentLoaded', () => {
         const descAR = item.querySelector('.gallery-item-desc .lang-ar').innerText;
 
         const isVideo = media && media.tagName.toLowerCase() === 'video';
+<<<<<<< HEAD
+        const isIframe = media && media.tagName.toLowerCase() === 'iframe';
+
+        // Hide all media types
+        if (lightboxImg) lightboxImg.style.display = 'none';
+        if (lightboxVideo) {
+            lightboxVideo.pause();
+            lightboxVideo.src = '';
+            lightboxVideo.style.display = 'none';
+        }
+        if (lightboxIframe) {
+            lightboxIframe.src = '';
+            lightboxIframe.style.display = 'none';
+        }
+
+        if (isVideo) {
+=======
 
         if (isVideo) {
             if (lightboxImg) lightboxImg.style.display = 'none';
+>>>>>>> 4e5992f72a9790aa689e3e72588518b3bb7e533d
             if (lightboxVideo) {
                 lightboxVideo.src = media.src;
                 lightboxVideo.style.display = 'block';
                 lightboxVideo.play().catch(e => console.log('Autoplay blocked in lightbox:', e));
             }
+<<<<<<< HEAD
+        } else if (isIframe) {
+            if (lightboxIframe) {
+                const videoId = media.getAttribute('data-video-id') || '';
+                if (videoId) {
+                    lightboxIframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+                } else {
+                    lightboxIframe.src = media.src;
+                }
+                lightboxIframe.style.display = 'block';
+            }
+        } else {
+=======
         } else {
             if (lightboxVideo) {
                 lightboxVideo.pause();
                 lightboxVideo.src = '';
                 lightboxVideo.style.display = 'none';
             }
+>>>>>>> 4e5992f72a9790aa689e3e72588518b3bb7e533d
             if (lightboxImg) {
                 lightboxImg.src = media ? media.src : '';
                 lightboxImg.style.display = 'block';
@@ -556,6 +592,12 @@ document.addEventListener('DOMContentLoaded', () => {
             lightboxVideo.pause();
             lightboxVideo.src = '';
         }
+<<<<<<< HEAD
+        if (lightboxIframe) {
+            lightboxIframe.src = '';
+        }
+=======
+>>>>>>> 4e5992f72a9790aa689e3e72588518b3bb7e533d
     }
 
     function showNextPhoto() {

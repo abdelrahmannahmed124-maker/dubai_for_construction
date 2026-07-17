@@ -19,7 +19,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
     <header class="main-header glass-effect">
         <div class="header-container">
             <a href="#" class="logo-link" id="nav-logo">
-                <img src="images/logo.jpg" alt="Dubai Contracting Logo" class="header-logo">
+                <img src="images/logo.webp" alt="Dubai Contracting Logo" class="header-logo">
                 <div class="logo-text">
                     <span class="logo-title lang-en">DUBAI</span>
                     <span class="logo-title lang-ar">دبي</span>
@@ -85,7 +85,7 @@
             <!-- Animated Focal Logo -->
             <div class="hero-logo-container">
                 <div class="logo-glow-effect"></div>
-                <img src="images/logo.jpg" alt="Dubai For General Contracting & Supplies" class="hero-brand-logo">
+                <img src="images/logo.webp" alt="Dubai For General Contracting & Supplies" class="hero-brand-logo">
             </div>
 
             <!-- Blueprint metadata details -->
@@ -206,7 +206,7 @@
                             <div class="quote-icon"><i data-lucide="quote"></i></div>
 
                             <div class="chairman-header">
-                                <img src="images/eng_mazen.jpeg" alt="Eng. Mazen Magdy" class="chairman-photo">
+                                <img src="images/eng_mazen.jpg" alt="Eng. Mazen Magdy" class="chairman-photo">
                                 <div class="chairman-info">
                                     <h3 class="chairman-name">
                                         <span class="lang-en">Eng. Mazen Magdy</span>
@@ -237,8 +237,12 @@
                         <!-- Autoplay Video Showcase Card -->
                         <div class="about-video-card glass-effect">
                             <div class="card-border-glow"></div>
-                            <video src="images/my_video1.mp4" autoplay muted loop playsinline
-                                class="about-video-el"></video>
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/c9PuGY4EGqU?autoplay=1&mute=1&loop=1&playlist=c9PuGY4EGqU&controls=0&playsinline=1&enablejsapi=1"
+                                class="about-video-el responsive-iframe"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen loading="lazy" data-video-id="c9PuGY4EGqU"
+                                style="border: none;"></iframe>
                         </div>
 
                     </div>
@@ -569,21 +573,21 @@
                             <div class="carousel-slides">
                                 <img src="images/project_2.jpg" alt="Automation Hall Finishing Works"
                                     class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_10_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_10_pm.jpg"
                                     alt="Automation Hall Finishing 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_10_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_10_pm_1.jpg"
                                     alt="Automation Hall Finishing 3" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm.jpg"
                                     alt="Automation Hall Finishing 4" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_2.jpg"
                                     alt="Automation Hall Finishing 5" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_3.jpg"
                                     alt="Automation Hall Finishing 6" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_4.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_4.jpg"
                                     alt="Automation Hall Finishing 7" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_5.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_5.jpg"
                                     alt="Automation Hall Finishing 8" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_6.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_11_pm_6.jpg"
                                     alt="Automation Hall Finishing 9" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -627,10 +631,10 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="construction" data-index="2">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/media_file.jpeg" alt="Cladding Line Foundation 1"
+                                <img src="images/media_file.jpg" alt="Cladding Line Foundation 1"
                                     class="carousel-slide active">
-                                <img src="images/2.jpeg" alt="Cladding Line Foundation 2" class="carousel-slide">
-                                <img src="images/3.jpeg" alt="Cladding Line Foundation 3" class="carousel-slide">
+                                <img src="images/2.jpg" alt="Cladding Line Foundation 2" class="carousel-slide">
+                                <img src="images/3.jpg" alt="Cladding Line Foundation 3" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
                                 <i data-lucide="chevron-left"></i>
@@ -669,14 +673,19 @@
                             <div class="carousel-slides">
                                 <img src="images/img_20240517_wa0050.jpg" alt="Epoxy Flooring 1"
                                     class="carousel-slide active">
-                                <img src="images/img_20240517_wa0051.jpg" alt="Epoxy Flooring 2" class="carousel-slide">
-                                <img src="images/img_20240517_wa0052.jpg" alt="Epoxy Flooring 3" class="carousel-slide">
-                                <img src="images/img_20240517_wa0053.jpg" alt="Epoxy Flooring 4" class="carousel-slide">
-                                <img src="images/img_20240517_wa0054.jpg" alt="Epoxy Flooring 5" class="carousel-slide">
-                                <img src="images/img_20240517_wa0081.jpg" alt="Epoxy Flooring 6" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_11_at_6_23_48_pm.jpeg" alt="Epoxy Flooring 7"
+                                <img src="images/img_20240517_wa0051.jpg" alt="Epoxy Flooring 2"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_11_at_6_23_49_pm.jpeg" alt="Epoxy Flooring 8"
+                                <img src="images/img_20240517_wa0052.jpg" alt="Epoxy Flooring 3"
+                                    class="carousel-slide">
+                                <img src="images/img_20240517_wa0053.jpg" alt="Epoxy Flooring 4"
+                                    class="carousel-slide">
+                                <img src="images/img_20240517_wa0054.jpg" alt="Epoxy Flooring 5"
+                                    class="carousel-slide">
+                                <img src="images/img_20240517_wa0081.jpg" alt="Epoxy Flooring 6"
+                                    class="carousel-slide">
+                                <img src="images/whatsapp_image_2026_07_11_at_6_23_48_pm.jpg" alt="Epoxy Flooring 7"
+                                    class="carousel-slide">
+                                <img src="images/whatsapp_image_2026_07_11_at_6_23_49_pm.jpg" alt="Epoxy Flooring 8"
                                     class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -765,15 +774,15 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="engineering" data-index="5">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/04f5297a_7c19_4819_86e1_60af35808c9a.jpeg" alt="Jeed Factory 1"
+                                <img src="images/04f5297a_7c19_4819_86e1_60af35808c9a.jpg" alt="Jeed Factory 1"
                                     class="carousel-slide active">
-                                <img src="images/4974ae53_1675_458a_bf42_efaf909b229f.jpeg" alt="Jeed Factory 2"
+                                <img src="images/4974ae53_1675_458a_bf42_efaf909b229f.jpg" alt="Jeed Factory 2"
                                     class="carousel-slide">
-                                <img src="images/69309a62_0232_4dc2_9daa_27371897f10f.jpeg" alt="Jeed Factory 3"
+                                <img src="images/69309a62_0232_4dc2_9daa_27371897f10f.jpg" alt="Jeed Factory 3"
                                     class="carousel-slide">
-                                <img src="images/a853e7e4_79f4_4164_8952_e9617d462a54.jpeg" alt="Jeed Factory 4"
+                                <img src="images/a853e7e4_79f4_4164_8952_e9617d462a54.jpg" alt="Jeed Factory 4"
                                     class="carousel-slide">
-                                <img src="images/aa17cffa_154e_45ed_bfa2_079826ddee80.jpeg" alt="Jeed Factory 5"
+                                <img src="images/aa17cffa_154e_45ed_bfa2_079826ddee80.jpg" alt="Jeed Factory 5"
                                     class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -815,9 +824,12 @@
                             <div class="carousel-slides">
                                 <img src="images/img_20221207_wa0006.jpg" alt="Shorouk Center 1"
                                     class="carousel-slide active">
-                                <img src="images/img_20221207_wa0007.jpg" alt="Shorouk Center 2" class="carousel-slide">
-                                <img src="images/img_20221207_wa0008.jpg" alt="Shorouk Center 3" class="carousel-slide">
-                                <img src="images/img_20221207_wa0010.jpg" alt="Shorouk Center 4" class="carousel-slide">
+                                <img src="images/img_20221207_wa0007.jpg" alt="Shorouk Center 2"
+                                    class="carousel-slide">
+                                <img src="images/img_20221207_wa0008.jpg" alt="Shorouk Center 3"
+                                    class="carousel-slide">
+                                <img src="images/img_20221207_wa0010.jpg" alt="Shorouk Center 4"
+                                    class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
                                 <i data-lucide="chevron-left"></i>
@@ -1002,16 +1014,16 @@
                                     class="carousel-slide">
                                 <img src="images/dubai_projects.jpg" alt="Foundation Slab Qandil 10"
                                     class="carousel-slide">
-                                <img src="images/img_20240402_wa0035.jpeg" alt="Foundation Slab Qandil 11"
+                                <img src="images/img_20240402_wa0035.jpg" alt="Foundation Slab Qandil 11"
                                     class="carousel-slide">
-                                <img src="images/img_20240402_wa0037.jpeg" alt="Foundation Slab Qandil 12"
+                                <img src="images/img_20240402_wa0037.jpg" alt="Foundation Slab Qandil 12"
                                     class="carousel-slide">
-                                <img src="images/img_20240402_wa0039.jpeg" alt="Foundation Slab Qandil 13"
+                                <img src="images/img_20240402_wa0039.jpg" alt="Foundation Slab Qandil 13"
                                     class="carousel-slide">
-                                <img src="images/2.jpeg" alt="Foundation Slab Qandil 14" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_08_at_10_18_16_pm.jpeg"
+                                <img src="images/2.jpg" alt="Foundation Slab Qandil 14" class="carousel-slide">
+                                <img src="images/whatsapp_image_2026_07_08_at_10_18_16_pm.jpg"
                                     alt="Foundation Slab Qandil 15" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_08_at_10_18_17_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_07_08_at_10_18_17_pm.jpg"
                                     alt="Foundation Slab Qandil 16" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1063,9 +1075,9 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="finishing" data-index="11">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/handrail.jpeg" alt="Handrail installation 1"
+                                <img src="images/handrail.jpg" alt="Handrail installation 1"
                                     class="carousel-slide active">
-                                <img src="images/handrail3.jpeg" alt="Handrail installation 2" class="carousel-slide">
+                                <img src="images/handrail3.jpg" alt="Handrail installation 2" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
                                 <i data-lucide="chevron-left"></i>
@@ -1101,13 +1113,13 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="finishing" data-index="12">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_56_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_56_pm_2.jpg"
                                     alt="Cleopatra Bathrooms 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_56_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_56_pm_3.jpg"
                                     alt="Cleopatra Bathrooms 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_57_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_57_pm_3.jpg"
                                     alt="Cleopatra Bathrooms 3" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_57_pm_4.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_57_pm_4.jpg"
                                     alt="Cleopatra Bathrooms 4" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1147,11 +1159,11 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="construction" data-index="13">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_41_52_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_41_52_pm.jpg"
                                     alt="Cafeteria Street Paving 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_41_53_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_41_53_pm.jpg"
                                     alt="Cafeteria Street Paving 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_41_54_pm_4.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_41_54_pm_4.jpg"
                                     alt="Cafeteria Street Paving 3" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1189,11 +1201,11 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="construction" data-index="14">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_40_28_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_40_28_pm_1.jpg"
                                     alt="Trenching Cables 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_40_32_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_40_32_pm_1.jpg"
                                     alt="Trenching Cables 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_40_32_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_40_32_pm_3.jpg"
                                     alt="Trenching Cables 3" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1231,15 +1243,15 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="finishing" data-index="15">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_46_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_46_pm.jpg"
                                     alt="Interior Painting 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_46_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_46_pm_2.jpg"
                                     alt="Interior Painting 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_47_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_47_pm.jpg"
                                     alt="Interior Painting 3" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_47_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_47_pm_2.jpg"
                                     alt="Interior Painting 4" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_47_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_47_pm_3.jpg"
                                     alt="Interior Painting 5" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1279,17 +1291,17 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="finishing" data-index="16">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_27_59_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_27_59_pm.jpg"
                                     alt="Locker Room Ceilings 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_27_59_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_27_59_pm_1.jpg"
                                     alt="Locker Room Ceilings 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm.jpg"
                                     alt="Locker Room Ceilings 3" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm_1.jpg"
                                     alt="Locker Room Ceilings 4" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm_2.jpg"
                                     alt="Locker Room Ceilings 5" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_00_pm_3.jpg"
                                     alt="Locker Room Ceilings 6" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1331,17 +1343,17 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="finishing" data-index="17">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm.jpg"
                                     alt="Emergency Doors Painting 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm_1.jpg"
                                     alt="Emergency Doors Painting 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm_2.jpg"
                                     alt="Emergency Doors Painting 3" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_13_pm_3.jpg"
                                     alt="Emergency Doors Painting 4" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_14_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_14_pm.jpg"
                                     alt="Emergency Doors Painting 5" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_29_14_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_29_14_pm_1.jpg"
                                     alt="Emergency Doors Painting 6" class="carousel-slide">
                                 <img src="images/safety_doors_new_1.jpg" alt="Emergency Doors Painting 7"
                                     class="carousel-slide">
@@ -1388,43 +1400,43 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="finishing" data-index="18">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm.jpeg" alt="Jeed Clinics 1"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm.jpg" alt="Jeed Clinics 1"
                                     class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_1.jpeg" alt="Jeed Clinics 2"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_1.jpg" alt="Jeed Clinics 2"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_2.jpeg" alt="Jeed Clinics 3"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_2.jpg" alt="Jeed Clinics 3"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_3.jpeg" alt="Jeed Clinics 4"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_3.jpg" alt="Jeed Clinics 4"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_4.jpeg" alt="Jeed Clinics 5"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_40_pm_4.jpg" alt="Jeed Clinics 5"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm.jpeg" alt="Jeed Clinics 6"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm.jpg" alt="Jeed Clinics 6"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_1.jpeg" alt="Jeed Clinics 7"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_1.jpg" alt="Jeed Clinics 7"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_2.jpeg" alt="Jeed Clinics 8"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_2.jpg" alt="Jeed Clinics 8"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_3.jpeg" alt="Jeed Clinics 9"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_3.jpg" alt="Jeed Clinics 9"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_4.jpeg" alt="Jeed Clinics 10"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_4.jpg" alt="Jeed Clinics 10"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_5.jpeg" alt="Jeed Clinics 11"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_5.jpg" alt="Jeed Clinics 11"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_6.jpeg" alt="Jeed Clinics 12"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_6.jpg" alt="Jeed Clinics 12"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_7.jpeg" alt="Jeed Clinics 13"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_7.jpg" alt="Jeed Clinics 13"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_8.jpeg" alt="Jeed Clinics 14"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_41_pm_8.jpg" alt="Jeed Clinics 14"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_1.jpeg" alt="Jeed Clinics 15"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_1.jpg" alt="Jeed Clinics 15"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_2.jpeg" alt="Jeed Clinics 16"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_2.jpg" alt="Jeed Clinics 16"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_3.jpeg" alt="Jeed Clinics 17"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_3.jpg" alt="Jeed Clinics 17"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_4.jpeg" alt="Jeed Clinics 18"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm_4.jpg" alt="Jeed Clinics 18"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm.jpeg" alt="Jeed Clinics 19"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_42_pm.jpg" alt="Jeed Clinics 19"
                                     class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1478,19 +1490,19 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="engineering" data-index="19">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm.jpg"
                                     alt="Canadian Cable Tray 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_1.jpg"
                                     alt="Canadian Cable Tray 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_2.jpg"
                                     alt="Canadian Cable Tray 3" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_3.jpg"
                                     alt="Canadian Cable Tray 4" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_4.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_38_pm_4.jpg"
                                     alt="Canadian Cable Tray 5" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_39_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_39_pm.jpg"
                                     alt="Canadian Cable Tray 6" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_26_39_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_26_39_pm_1.jpg"
                                     alt="Canadian Cable Tray 7" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1532,37 +1544,37 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="construction" data-index="20">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_25_pm_1.jpeg" alt="Nursery Setup 1"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_25_pm_1.jpg" alt="Nursery Setup 1"
                                     class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_25_pm.jpeg" alt="Nursery Setup 2"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_25_pm.jpg" alt="Nursery Setup 2"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_1.jpeg" alt="Nursery Setup 3"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_1.jpg" alt="Nursery Setup 3"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_2.jpeg" alt="Nursery Setup 4"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_2.jpg" alt="Nursery Setup 4"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_3.jpeg" alt="Nursery Setup 5"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_3.jpg" alt="Nursery Setup 5"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_4.jpeg" alt="Nursery Setup 6"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_4.jpg" alt="Nursery Setup 6"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_5.jpeg" alt="Nursery Setup 7"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_5.jpg" alt="Nursery Setup 7"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_6.jpeg" alt="Nursery Setup 8"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_6.jpg" alt="Nursery Setup 8"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_7.jpeg" alt="Nursery Setup 9"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm_7.jpg" alt="Nursery Setup 9"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm.jpeg" alt="Nursery Setup 10"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_26_pm.jpg" alt="Nursery Setup 10"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_1.jpeg" alt="Nursery Setup 11"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_1.jpg" alt="Nursery Setup 11"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_2.jpeg" alt="Nursery Setup 12"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_2.jpg" alt="Nursery Setup 12"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_3.jpeg" alt="Nursery Setup 13"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_3.jpg" alt="Nursery Setup 13"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_4.jpeg" alt="Nursery Setup 14"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_4.jpg" alt="Nursery Setup 14"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_5.jpeg" alt="Nursery Setup 15"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm_5.jpg" alt="Nursery Setup 15"
                                     class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm.jpeg" alt="Nursery Setup 16"
+                                <img src="images/whatsapp_image_2026_06_27_at_10_28_27_pm.jpg" alt="Nursery Setup 16"
                                     class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1613,23 +1625,23 @@
                     <div class="gallery-item glass-effect scroll-reveal" data-category="construction" data-index="21">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm_1.jpg"
                                     alt="Production Hall Renovation 1" class="carousel-slide active">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm_2.jpg"
                                     alt="Production Hall Renovation 2" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm_3.jpg"
                                     alt="Production Hall Renovation 3" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_47_pm.jpg"
                                     alt="Production Hall Renovation 4" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_1.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_1.jpg"
                                     alt="Production Hall Renovation 5" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_2.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_2.jpg"
                                     alt="Production Hall Renovation 6" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_3.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_3.jpg"
                                     alt="Production Hall Renovation 7" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_4.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm_4.jpg"
                                     alt="Production Hall Renovation 8" class="carousel-slide">
-                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm.jpeg"
+                                <img src="images/whatsapp_image_2026_07_09_at_3_49_48_pm.jpg"
                                     alt="Production Hall Renovation 9" class="carousel-slide">
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
@@ -1674,15 +1686,24 @@
                         data-index="22">
                         <div class="gallery-media-wrapper">
                             <div class="carousel-slides">
-                                <video src="images/renovation_renewal_video.mp4" autoplay muted loop playsinline
-                                    class="carousel-slide active"
-                                    style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
-                                <video src="images/automation_video.mp4" autoplay muted loop playsinline
-                                    class="carousel-slide"
-                                    style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
-                                <video src="images/pouring_video.mp4" autoplay muted loop playsinline
-                                    class="carousel-slide"
-                                    style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/c9PuGY4EGqU?autoplay=1&mute=1&loop=1&playlist=c9PuGY4EGqU&controls=0&playsinline=1&enablejsapi=1"
+                                    class="carousel-slide active responsive-iframe"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen loading="lazy" data-video-id="c9PuGY4EGqU"
+                                    style="width: 100%; height: 100%; border: none;"></iframe>
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/Txw9L-el3_Y?autoplay=1&mute=1&loop=1&playlist=Txw9L-el3_Y&controls=0&playsinline=1&enablejsapi=1"
+                                    class="carousel-slide responsive-iframe"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen loading="lazy" data-video-id="Txw9L-el3_Y"
+                                    style="width: 100%; height: 100%; border: none;"></iframe>
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/MgdIDAsru9c?autoplay=1&mute=1&loop=1&playlist=MgdIDAsru9c&controls=0&playsinline=1&enablejsapi=1"
+                                    class="carousel-slide responsive-iframe"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen loading="lazy" data-video-id="MgdIDAsru9c"
+                                    style="width: 100%; height: 100%; border: none;"></iframe>
                             </div>
                             <button class="carousel-control prev-btn" aria-label="Previous Slide">
                                 <i data-lucide="chevron-left"></i>
@@ -1721,8 +1742,12 @@
                 <!-- Horizontal Promo Video Showcase (Full Width under gallery grid) -->
                 <div class="promo-video-container scroll-reveal"
                     style="margin-top: 50px; width: 100%; border-radius: var(--rounded-card); overflow: hidden; border: 1px solid var(--border-glass); box-shadow: var(--shadow-glass); aspect-ratio: 16 / 9; max-width: 1000px; margin-left: auto; margin-right: auto;">
-                    <video src="images/comprehensive_promo_company.mp4" autoplay muted loop playsinline
-                        style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/MgdIDAsru9c?autoplay=1&mute=1&loop=1&playlist=MgdIDAsru9c&controls=0&playsinline=1&enablejsapi=1"
+                        class="responsive-iframe"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen loading="lazy" data-video-id="MgdIDAsru9c"
+                        style="width: 100%; height: 100%; display: block; border: none;"></iframe>
                 </div>
 
                 <div class="video-showcase-wrapper section-padding-small">
@@ -2233,6 +2258,10 @@
             <img src="" alt="Project Image High-Res" class="lightbox-img" id="lightbox-main-img">
             <video src="" class="lightbox-video" id="lightbox-main-video" controls autoplay loop
                 style="display: none; max-width: 100%; max-height: 80vh; border-radius: var(--rounded-card); box-shadow: var(--shadow-glass); border: 1px solid var(--border-glass);"></video>
+            <iframe src="" class="lightbox-iframe" id="lightbox-main-iframe" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="display: none; width: 80vw; aspect-ratio: 16/9; max-width: 900px; max-height: 80vh; border-radius: var(--rounded-card); box-shadow: var(--shadow-glass); border: 1px solid var(--border-glass);"></iframe>
             <div class="lightbox-caption" id="lightbox-caption-text">
                 <!-- Caption populated dynamically by JS -->
             </div>
@@ -2283,7 +2312,7 @@
     </footer>
 
     <!-- Custom Script -->
-    <script src="script.js"></script>
+    <script src="script.min.js"></script>
 </body>
 
 </html>

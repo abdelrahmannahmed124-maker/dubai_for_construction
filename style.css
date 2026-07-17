@@ -769,8 +769,13 @@ html[lang="ar"] .quote-icon {
     position: relative;
     border-radius: var(--rounded-card);
     overflow: hidden;
+<<<<<<< HEAD
+    aspect-ratio: 16 / 9;
+    max-width: 500px;
+=======
     aspect-ratio: 9 / 16;
     max-width: 400px;
+>>>>>>> 4e5992f72a9790aa689e3e72588518b3bb7e533d
     margin: 0 auto;
     border: 1px solid var(--border-glass);
     box-shadow: var(--shadow-glass);
@@ -1031,7 +1036,11 @@ html[lang="ar"] .quote-icon {
 }
 
 .gallery-item.vertical-card .gallery-media-wrapper {
+<<<<<<< HEAD
+    aspect-ratio: 16 / 9;
+=======
     aspect-ratio: 9 / 16;
+>>>>>>> 4e5992f72a9790aa689e3e72588518b3bb7e533d
 }
 
 .gallery-img {
@@ -1633,7 +1642,11 @@ html[lang="ar"] .partners-track {
 /* ------------------------------------
    MODALS & LIGHTBOX (FULLSCREEN)
    ------------------------------------ */
+<<<<<<< HEAD
+/* General Modal Styles */
+=======
 /* General Modal Styles *
+>>>>>>> 4e5992f72a9790aa689e3e72588518b3bb7e533d
 .lightbox-modal,
 .video-modal-player {
     position: fixed;
